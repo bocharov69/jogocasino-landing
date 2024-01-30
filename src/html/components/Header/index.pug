@@ -1,0 +1,26 @@
+-
+    const headerData = {
+        navItems: [
+            {
+                text: lang.pt['register'],
+                translateId: 'register',
+                classNames: 'header__nav-item ff-geo main-button --reg-btn',
+            },
+            {
+                text: lang.pt['login'],
+                translateId: 'login',
+                classNames: 'header__nav-item ff-geo main-button',
+            },
+        ]
+    }
+
+
+header(class='header')
+    div(class="content")
+        div(class="header__logo logo")
+            img(src="@img/icons/logo.png" alt="jogocasinos")
+        button(class="header__burger")
+        nav(class="header__nav")
+            for navItem in headerData.navItems
+                button(class=navItem.classNames data-translate=navItem.translateId)!=navItem.text
+

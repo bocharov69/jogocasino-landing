@@ -1,0 +1,27 @@
+@mixin mainFontFamily {
+  font-family: "Helvetica", "Geomanist", sans-serif;
+}
+
+@mixin remFontSizeSetUp {
+  font-size: 0.278vw;
+
+  @include screen-tb { 
+    font-size: 0.13vw;
+  }
+
+  @include screen-lp {
+    font-size: 0.11vw;
+  }
+
+  @include screen-md {
+    font-size: 0.052vw;
+  }
+
+  @include screen-hd {
+    font-size: 0.052vw;
+  }
+
+  @include screen-lg {
+    font-size: 1.76px;
+  }
+}

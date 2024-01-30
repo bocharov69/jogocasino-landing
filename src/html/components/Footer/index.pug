@@ -1,0 +1,62 @@
+-
+    const footerData = {
+        navItems: [
+            {
+                text: lang.pt['privacy'],
+                translateId: 'privacy',
+                classNames: 'footer__nav-item',
+                link: "@pages/privacy-policy/",
+            },
+            {
+                text: lang.pt['terms'],
+                translateId: 'terms',
+                classNames: 'footer__nav-item',
+                link: "@pages/terms-of-use/",
+            },
+            {
+                text: lang.pt['cookies'],
+                translateId: 'cookies',
+                classNames: 'footer__nav-item',
+                link: "@pages/cookies/",
+            },
+            {
+                text: lang.pt['games'],
+                translateId: 'games',
+                classNames: 'footer__nav-item',
+                link: "@pages/games/",
+            },
+        ],
+        textContent: [
+            {
+                text: lang.pt['footer-text'],
+                translateId: 'footer-text',
+                classNames: 'footer__text-p',
+            },
+            {
+                text: lang.pt['awareness'],
+                translateId: 'awareness',
+                classNames: 'footer__nav-item',
+            },
+            {
+                text: lang.pt['responsibility'],
+                translateId: 'responsibility',
+                classNames: 'footer__nav-item',
+            },
+        ]
+    }
+
+
+footer(class='footer')
+    div(class="content")
+        div(class="footer__logo logo")
+            img(src="@img/icons/logo.png" alt="jogocasinos")
+        nav(class="footer__nav")
+            for navItem in footerData.navItems
+                a(href=navItem.link class=navItem.classNames data-translate=navItem.translateId)!=navItem.text
+        div(class="footer__text")
+            p(class=footerData.textContent[0].classNames data-translate=footerData.textContent[0].translateId)!=footerData.textContent[0].text
+            div(class="footer__text-wrapper")
+                img(src="@img/icons/18+.svg", alt="18+")
+                p(class=footerData.textContent[1].classNames data-translate=footerData.textContent[1].translateId)!=footerData.textContent[1].text
+                p(class=footerData.textContent[2].classNames data-translate=footerData.textContent[2].translateId)!=footerData.textContent[2].text    
+

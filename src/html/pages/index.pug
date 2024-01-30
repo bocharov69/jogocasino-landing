@@ -1,0 +1,244 @@
+extends ../components/Layouts/MainLayout/index.pug
+
+block mainLayoutVariables
+    //- head meta data
+    -
+        const pageMetaData = {
+            keywords: '',
+            description: '',
+            title: 'Jogo Casinos',
+            faviconSrc: '@img/favicon.ico'
+        }
+
+block mainLayoutContent
+    //- page content data
+    -
+        const pageData = {
+            section1: {
+                textContent: [
+                    {
+                        text: lang.pt['mp-text-1'],
+                        translateId: 'mp-text-1',
+                        classNames: 'txt-22',
+                    },
+                    {
+                        text: lang.pt['jogocasinos'],
+                        translateId: 'jogocasinos',
+                        classNames: 'txt-68 fw-900 ff-geo',
+                    },
+                    {
+                        text: lang.pt['mp-text-2'],
+                        translateId: 'mp-text-2',
+                        classNames: 'txt-22',
+                    },
+                ],
+                buttons: [
+                    {
+                        link: "@pages/games/",
+                        text: lang.pt['mp-text-3'],
+                        translateId: 'mp-text-3',
+                        classNames: 'main-button',
+                    },
+                ]
+            },
+            section2: {
+                cards: [
+                    {
+                        imgClassnames: "content-img mp-s2-1",
+                        textContent: [
+                            {
+                                text: lang.pt['mp-text-4'],
+                                translateId: 'mp-text-4',
+                                classNames: 'txt-40 fw-500 ff-geo',
+                            },
+                            {
+                                text: lang.pt['mp-text-5'],
+                                translateId: 'mp-text-5',
+                                classNames: '',
+                            }
+                        ],
+                    },
+                    {
+                        imgClassnames: "content-img mp-s2-2",
+                        textContent: [
+                            {
+                                text: lang.pt['mp-text-6'],
+                                translateId: 'mp-text-6',
+                                classNames: 'txt-40 fw-500 ff-geo',
+                            },
+                            {
+                                text: lang.pt['mp-text-7'],
+                                translateId: 'mp-text-7',
+                                classNames: '',
+                            }
+                        ],
+                    },
+                    {
+                        imgClassnames: "content-img mp-s2-3",
+                        textContent: [
+                            {
+                                text: lang.pt['mp-text-8'],
+                                translateId: 'mp-text-8',
+                                classNames: 'txt-40 fw-500 ff-geo',
+                            },
+                            {
+                                text: lang.pt['mp-text-9'],
+                                translateId: 'mp-text-9',
+                                classNames: '',
+                            }
+                        ],
+                    },
+                ]
+            },
+            section3: {
+                textContent: {
+                    text: lang.pt['mp-text-10'],
+                    translateId: 'mp-text-10',
+                    classNames: 'txt-22',
+                },
+                cards: [
+                    {
+                        text: lang.pt['mp-text-11'],
+                        translateId: 'mp-text-11',
+                        classNames: 'txt-40 fw-500 ff-geo mp-s3-1',
+                        img: "@img/icons/mp-s3-1.svg",
+                    },
+                    {
+                        text: lang.pt['mp-text-12'],
+                        translateId: 'mp-text-12',
+                        classNames: 'txt-40 fw-500 ff-geo mp-s3-2',
+                        img: "@img/icons/mp-s3-2.svg",
+                    },
+                    {
+                        text: lang.pt['mp-text-13'],
+                        translateId: 'mp-text-13',
+                        classNames: 'txt-40 fw-500 ff-geo mp-s3-3',
+                        img: "@img/icons/mp-s3-3.svg",
+                    },
+                ]
+            },
+            section4: {
+                textContent: [
+                    {
+                        text: lang.pt['mp-text-14'],
+                        translateId: 'mp-text-14',
+                        classNames: 'txt-40 fw-500 ff-geo',
+                    },
+                ],
+                slides: [
+                    {
+                        classNames: 'swiper-slide content-slot',
+                        img: '@img/slots/1.png',
+                        stickers: [
+                            {
+                                text: lang.pt['novo'],
+                                translateId: 'novo',
+                                classNames: 'content-slot-sticker --novo fw-500 ff-geo'
+                            },
+                            {
+                                text: lang.pt['topo'],
+                                translateId: 'topo',
+                                classNames: 'content-slot-sticker --topo fw-500 ff-geo'
+                            }
+                        ]
+                    },
+                    {
+                        classNames: 'swiper-slide content-slot',
+                        img: '@img/slots/2.png',
+                        stickers: [
+                            {
+                                text: lang.pt['topo'],
+                                translateId: 'topo',
+                                classNames: 'content-slot-sticker --topo fw-500 ff-geo' 
+                            }
+                        ]
+                    },
+                    {
+                        classNames: 'swiper-slide content-slot',
+                        img: '@img/slots/3.png',
+                        stickers: [
+                            {
+                                text: lang.pt['topo'],
+                                translateId: 'topo',
+                                classNames: 'content-slot-sticker --topo fw-500 ff-geo'
+                            }
+                        ]
+                    },
+                    {
+                        classNames: 'swiper-slide content-slot',
+                        img: '@img/slots/4.png',
+                        stickers: [
+                            {
+                                text: lang.pt['novo'],
+                                translateId: 'novo',
+                                classNames: 'content-slot-sticker --novo fw-500 ff-geo'
+                            },
+                            {
+                                text: lang.pt['topo'],
+                                translateId: 'topo',
+                                classNames: 'content-slot-sticker --topo fw-500 ff-geo'
+                            }
+                        ]
+                    },
+                ],
+                buttons: [
+                    {
+                        link: "@pages/games/",
+                        text: lang.pt['mp-text-15'],
+                        translateId: 'mp-text-15',
+                        classNames: 'main-button',
+                    },
+                ]
+            }
+        }
+
+
+    //- MARK UP
+
+    main(id="main-page") 
+        section(class="section --one")
+            div(Class="content")
+                article(class="content-text")
+                    p(class=pageData.section1.textContent[0].classNames data-translate=pageData.section1.textContent[0].translateId)!=pageData.section1.textContent[0].text
+                    h2(class=pageData.section1.textContent[1].classNames data-translate=pageData.section1.textContent[1].translateId)!=pageData.section1.textContent[1].text
+                    br
+                    p(class=pageData.section1.textContent[2].classNames data-translate=pageData.section1.textContent[2].translateId)!=pageData.section1.textContent[2].text
+                    br
+                    a(href=pageData.section1.buttons[0].link class=pageData.section1.buttons[0].classNames data-translate=pageData.section1.buttons[0].translateId)!=pageData.section1.buttons[0].text
+                div(class="content-img")
+
+        section(class="section --two")
+            div(Class="content")
+                for card in pageData.section2.cards
+                    div(class="content-card-wrapper")
+                        div(class=card.imgClassnames)
+                        div(class="content-text")
+                            h2(class=card.textContent[0].classNames data-translate=card.textContent[0].translateId)!=card.textContent[0].text
+                            br
+                            p(class=card.textContent[1].classNames data-translate=card.textContent[1].translateId)!=card.textContent[1].text
+
+        section(class="section --three")
+            div(Class="content")
+                div(class="content-text")
+                    p(class=pageData.section3.textContent.classNames data-translate=pageData.section3.textContent.translateId)!=pageData.section3.textContent.text
+                div(class="content-card-wrapper")
+                    for card in pageData.section3.cards
+                        div(class="content-card")
+                            h2(class=card.classNames data-translate=card.translateId)!=card.text
+                            div(class="content-icon")
+                                img(src=card.img)
+
+        section(class="section --four")
+            div(Class="content")
+                div(class="swiper")
+                    h2(class=pageData.section4.textContent[0].classNames data-translate=pageData.section4.textContent[0].translateId)!=pageData.section4.textContent[0].text
+                    div(class="swiper-button-prev")
+                    div(class="swiper-button-next")
+                    div(class="swiper-wrapper")
+                        for slide in pageData.section4.slides
+                            a(href="#" class=slide.classNames)
+                                img(src=slide.img)
+                                for sticker in slide.stickers 
+                                    div(class="content-slot-stickers")
+                                        div(class=sticker.classNames data-translate=sticker.translateId)!=sticker.text
+                a(href=pageData.section4.buttons[0].link class=pageData.section4.buttons[0].classNames data-translate=pageData.section4.buttons[0].translateId)!=pageData.section4.buttons[0].text

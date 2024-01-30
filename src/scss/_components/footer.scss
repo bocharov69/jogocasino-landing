@@ -1,0 +1,59 @@
+.footer {
+    background: $darkBlue;
+    width: 100%;
+    padding: 30rem 20rem 40rem;
+    &__logo {
+        margin-bottom: 15rem;
+    }
+    &__nav {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        &-item {
+            display: inline-block;
+            margin: 15rem 10rem;
+        }
+    }
+    &__text {
+        margin-top: 20rem;
+        &-p {
+            color: #7D7199;
+        }
+        &-wrapper {
+            display: flex;
+            margin: 30rem 0 15rem;
+            * {
+                margin-right: 10rem;
+            }
+        }
+    }
+    .content {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        @include screen-tb {
+            justify-content: space-between;
+        }
+    }
+
+    @include screen-tb {
+        padding: 30rem 20rem 70rem;
+        &:after {
+            content: '';
+            display: block;
+            position: relative;
+            width: calc(100% + 40rem);
+            margin-left: -20rem;
+            border-top: 2px solid rgba(255,255,255,0.3);
+        }
+
+        &__text {
+            &-wrapper {
+                * {
+                    margin-right: 30rem;
+                }
+            }
+        }
+    }
+}

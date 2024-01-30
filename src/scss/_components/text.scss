@@ -1,0 +1,30 @@
+.fw-900 {
+    font-weight: 900;
+}
+.fw-700 {
+    font-weight: 700;
+}
+.fw-500 {
+    font-weight: 500;
+}
+.ff-geo {
+    font-family: "Geomanist", "Helvetica", sans-serif;
+}
+.txt-22 {
+    font-size: 18rem;
+    @include screen-tb {
+        font-size: 22rem;
+    }
+}
+.txt-40 {
+    font-size: 24rem;
+    @include screen-tb {
+        font-size: 40rem;
+    }
+}
+.txt-68 {
+    font-size: 30rem;
+    @include screen-tb {
+        font-size: 68rem;
+    }
+}

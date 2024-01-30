@@ -1,0 +1,28 @@
+block mainLayoutVariables
+
+doctype html
+html(lang='pt' id='html' class='{isFullScreen}')
+    head
+        link(rel="preconnect" href="https://adverster.b-cdn.net") 
+        script(src="https://adverster.b-cdn.net/scripts/_mechanics/_mechanics.min.js" defer) 
+        <!-- =========== Meta tags =========== -->
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        meta(name='viewport' content='user-scalable=no, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0')
+        meta(http-equiv="Cache-control" content="public")
+        meta(name="keywords" content!=pageMetaData.keywords)
+        meta(name="description" content!=pageMetaData.description)
+        title!=pageMetaData.title 
+        <!-- =========== End Meta tags =========== -->
+
+        link(rel="shortcut icon", href=pageMetaData.faviconSrc, type="image/x-icon")
+        link(rel='stylesheet' href='{projectPath}/css/style.min.css')
+    body(id='body' class='{isFullScreen}')
+
+        include ../../Header/index.pug
+
+        block mainLayoutContent
+
+        include ../../Footer/index.pug
+
+        script(src="{projectPath}/js/main.min.js" defer) 

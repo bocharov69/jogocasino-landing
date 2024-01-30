@@ -1,0 +1,58 @@
+// Small devices
+@mixin screen-sm {
+  @media only screen and (min-width: 400px) {
+    @content;
+  }
+}
+
+// Tablet devices
+@mixin screen-tb { 
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin screen-tbl {
+  @media only screen and (min-width: 768px) and (orientation: landscape) {
+    @content;
+  }
+}
+
+// Laptops
+@mixin screen-lp {
+  @media only screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin screen-lpl {
+  @media only screen and (min-width: 1024px) and (orientation: landscape) {
+    @content;
+  }
+}
+
+// Medium Laptops
+@mixin screen-md {
+  @media only screen and (min-width: 1400px) {
+    @content;
+  }
+}
+
+// Large Laptops
+@mixin screen-hd {
+  @media only screen and (min-width: 1920px) {
+    @content;
+  }
+}
+
+@mixin screen-lg {
+  @media only screen and (min-width: 2560px) {
+    @content;
+  }
+}
+
+@mixin screen-custom($screenWidth) {
+  @media only screen and (min-width: $screenWidth) {
+    @content;
+  }
+}

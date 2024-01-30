@@ -1,0 +1,48 @@
+#games-page .section {
+    &.--one {
+        padding: 30rem 20rem 0;
+        .content {
+            &-img {
+                width: 100%;
+                height: 180rem;
+                background-image: $posterBg;
+                border-radius: 20rem;
+            }
+
+            @include screen-tb {
+                &-img {
+                    border-radius: 40rem;
+                    height: 450rem;
+                }
+            }
+        }
+    }
+    &.--two {
+        padding-left: 10rem;
+        .content {
+            &-text {
+                padding-left: 10rem;
+            }
+            &-slot {
+                height: 230rem;
+                margin-top: 25rem;
+            }
+            @include screen-tb {
+                &-slot {
+                    flex: 0 1 49%;
+                }
+                &-card-wrapper {
+                    flex-flow: row wrap;
+                    justify-content: space-between;
+                }
+            }
+            @include screen-md {
+                &-slot {
+                    margin-top: 40rem;
+                    height: 300rem;
+                    flex: 0 1 32%;
+                }
+            }
+        }
+    }
+}
