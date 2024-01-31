@@ -1,0 +1,191 @@
+extends ../../components/Layouts/MainLayout/index.pug
+
+block mainLayoutVariables
+    //- head meta data
+    -
+        const pageMetaData = {
+            keywords: '',
+            description: '',
+            title: 'Jogo Casinos',
+            faviconSrc: '@img/icons/favicon.ico'
+        }
+
+block mainLayoutContent
+    //- page content data
+    -
+        const pageData = {
+            section1: {
+                textContent: [
+                    {
+                        text: lang.pt['terms-heading'],
+                        translateId: 'terms-heading',
+                        classNames: 'txt-40 fw-500 ff-geo',
+                    },
+                    {
+                        text: lang.pt['terms-p-1'],
+                        translateId: 'terms-p-1',
+                        classNames: 'txt-22',
+                    },
+                    {
+                        text: lang.pt['terms-h-1'],
+                        translateId: 'terms-h-1',
+                        classNames: 'txt-22 fw-700 tt-u',
+                    },
+                    {
+                        text: lang.pt['terms-p-2'],
+                        translateId: 'terms-p-2',
+                        classNames: 'txt-22',
+                    },
+                    {
+                        text: lang.pt['terms-h-2'],
+                        translateId: 'terms-h-2',
+                        classNames: 'txt-22 fw-700 tt-u',
+                    },
+                    {
+                        text: lang.pt['terms-p-3'],
+                        translateId: 'terms-p-3',
+                        classNames: 'txt-22',
+                    },
+                    {
+                        text: lang.pt['terms-h-3'],
+                        translateId: 'terms-h-3',
+                        classNames: 'txt-22 fw-700 tt-u',
+                    },
+                    {
+                        text: lang.pt['terms-p-4'],
+                        translateId: 'terms-p-4',
+                        classNames: 'txt-22',
+                    },
+                    {
+                        text: lang.pt['terms-h-4'],
+                        translateId: 'terms-h-4',
+                        classNames: 'txt-22 fw-700 tt-u',
+                    },
+                    {
+                        text: lang.pt['terms-p-5'],
+                        translateId: 'terms-p-5',
+                        classNames: 'txt-22',
+                    },
+                    {
+                        text: lang.pt['terms-h-5'],
+                        translateId: 'terms-h-5',
+                        classNames: 'txt-22 fw-700 tt-u',
+                    },
+                    {
+                        text: lang.pt['terms-p-6'],
+                        translateId: 'terms-p-6',
+                        classNames: 'txt-22',
+                    },
+                    {
+                        text: lang.pt['terms-h-6'],
+                        translateId: 'terms-h-6',
+                        classNames: 'txt-22 fw-700 tt-u',
+                    },
+                    {
+                        text: lang.pt['terms-p-7'],
+                        translateId: 'terms-p-7',
+                        classNames: 'txt-22',
+                    },
+                    {
+                        text: lang.pt['terms-h-7'],
+                        translateId: 'terms-h-7',
+                        classNames: 'txt-22 fw-700 tt-u',
+                    },
+                    {
+                        text: lang.pt['terms-p-8'],
+                        translateId: 'terms-p-8',
+                        classNames: 'txt-22',
+                    },
+                    {
+                        text: lang.pt['terms-h-8'],
+                        translateId: 'terms-h-8',
+                        classNames: 'txt-22 fw-700 tt-u',
+                    },
+                    {
+                        text: lang.pt['terms-p-9'],
+                        translateId: 'terms-p-9',
+                        classNames: 'txt-22',
+                    },
+                    {
+                        text: lang.pt['terms-h-9'],
+                        translateId: 'terms-h-9',
+                        classNames: 'txt-22 fw-700 tt-u',
+                    },
+                    {
+                        text: lang.pt['terms-p-10'],
+                        translateId: 'terms-p-10',
+                        classNames: 'txt-22',
+                    },
+                    {
+                        text: lang.pt['terms-h-10'],
+                        translateId: 'terms-h-10',
+                        classNames: 'txt-22 fw-700 tt-u',
+                    },
+                    {
+                        text: lang.pt['terms-p-11'],
+                        translateId: 'terms-p-11',
+                        classNames: 'txt-22',
+                    },
+                    {
+                        text: lang.pt['terms-h-11'],
+                        translateId: 'terms-h-11',
+                        classNames: 'txt-22 fw-700 tt-u',
+                    },
+
+                    {
+                        text: lang.pt['terms-p-12'],
+                        translateId: 'terms-p-12',
+                        classNames: 'txt-22',
+                    },
+                    {
+                        text: lang.pt['terms-h-12'],
+                        translateId: 'terms-h-12',
+                        classNames: 'txt-22 fw-700 tt-u',
+                    },
+                    {
+                        text: lang.pt['terms-p-13'],
+                        translateId: 'terms-p-13',
+                        classNames: 'txt-22',
+                    },
+                    {
+                        text: lang.pt['terms-h-13'],
+                        translateId: 'terms-h-13',
+                        classNames: 'txt-22 fw-700 tt-u',
+                    },
+                    {
+                        text: lang.pt['terms-p-14'],
+                        translateId: 'terms-p-14',
+                        classNames: 'txt-22',
+                    },
+                    {
+                        text: lang.pt['terms-h-14'],
+                        translateId: 'terms-h-14',
+                        classNames: 'txt-22 fw-700 tt-u',
+                    },
+                    {
+                        text: lang.pt['terms-p-15'],
+                        translateId: 'terms-p-15',
+                        classNames: 'txt-22',
+                    },
+                    {
+                        text: lang.pt['terms-h-15'],
+                        translateId: 'terms-h-15',
+                        classNames: 'txt-22 fw-700 tt-u',
+                    },
+                    {
+                        text: lang.pt['terms-p-16'],
+                        translateId: 'terms-p-16',
+                        classNames: 'txt-22',
+                    },
+                ],
+            }
+        }
+
+    //- MARK UP
+
+    main(id="terms-page") 
+        section(class="section --one")
+            div(Class="content")
+                article(class="content-text")
+                    for text in pageData.section1.textContent
+                        p(class=text.classNames data-translate=text.translateId)!=text.text

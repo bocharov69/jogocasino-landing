@@ -52,7 +52,8 @@
             &-img {
                 height: 250rem;
                 min-width: 100%;
-                margin: 0 0 15rem 0;
+                margin: 15rem 0 0 0;
+                order: 1;
                 &.mp-s2-1 {
                     background-image: $mp-s2-1;
                 }
@@ -73,6 +74,7 @@
                     height: 350rem;
                     min-width: 40%;
                     margin: 0 20rem 0 0;
+                    order: initial;
                     &.mp-s2-2 {
                         order: 1;
                         margin: 0 0 0 20rem;

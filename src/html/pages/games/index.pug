@@ -7,7 +7,7 @@ block mainLayoutVariables
             keywords: '',
             description: '',
             title: 'Jogo Casinos',
-            faviconSrc: '@img/favicon.ico'
+            faviconSrc: '@img/icons/favicon.ico'
         }
 
 block mainLayoutContent
@@ -89,7 +89,7 @@ block mainLayoutContent
 
         section(class="section --two")
             div(Class="content")
-                div(class="content-text")
+                article(class="content-text")
                     h2(class=pageData.section2.textContent[0].classNames data-translate=pageData.section2.textContent[0].translateId)!=pageData.section2.textContent[0].text
                 div(class="content-card-wrapper")  
                     for slot in pageData.section2.slots

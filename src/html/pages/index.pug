@@ -7,7 +7,7 @@ block mainLayoutVariables
             keywords: '',
             description: '',
             title: 'Jogo Casinos',
-            faviconSrc: '@img/favicon.ico'
+            faviconSrc: '@img/icons/favicon.ico'
         }
 
 block mainLayoutContent
@@ -212,14 +212,14 @@ block mainLayoutContent
                 for card in pageData.section2.cards
                     div(class="content-card-wrapper")
                         div(class=card.imgClassnames)
-                        div(class="content-text")
+                        article(class="content-text")
                             h2(class=card.textContent[0].classNames data-translate=card.textContent[0].translateId)!=card.textContent[0].text
                             br
                             p(class=card.textContent[1].classNames data-translate=card.textContent[1].translateId)!=card.textContent[1].text
 
         section(class="section --three")
             div(Class="content")
-                div(class="content-text")
+                article(class="content-text")
                     p(class=pageData.section3.textContent.classNames data-translate=pageData.section3.textContent.translateId)!=pageData.section3.textContent.text
                 div(class="content-card-wrapper")
                     for card in pageData.section3.cards
