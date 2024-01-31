@@ -1,0 +1,80 @@
+extends ../../components/Layouts/MainLayout/index.pug
+
+block mainLayoutVariables
+    //- head meta data
+    -
+        const pageMetaData = {
+            keywords: '',
+            description: '',
+            title: 'Jogo Casinos',
+            faviconSrc: '@img/icons/favicon.ico'
+        }
+
+block mainLayoutContent
+    //- page content data
+    -
+        const pageData = {
+            section1: {
+                textContent: [
+                    {
+                        text: lang.pt['cookies-heading'],
+                        translateId: 'cookies-heading',
+                        classNames: 'txt-40 fw-500 ff-geo',
+                    },
+                    {
+                        text: lang.pt['cookies-p-1'],
+                        translateId: 'cookies-p-1',
+                        classNames: 'txt-22',
+                    },
+                    {
+                        text: lang.pt['cookies-h-2'],
+                        translateId: 'cookies-h-2',
+                        classNames: 'txt-22 fw-700 tt-u',
+                    },
+                    {
+                        text: lang.pt['cookies-p-2'],
+                        translateId: 'cookies-p-2',
+                        classNames: 'txt-22',
+                    },
+                    {
+                        text: lang.pt['cookies-h-3'],
+                        translateId: 'cookies-h-3',
+                        classNames: 'txt-22 fw-700 tt-u',
+                    },
+                    {
+                        text: lang.pt['cookies-p-3'],
+                        translateId: 'cookies-p-3',
+                        classNames: 'txt-22',
+                    },
+                    {
+                        text: lang.pt['cookies-h-4'],
+                        translateId: 'cookies-h-4',
+                        classNames: 'txt-22 fw-700 tt-u',
+                    },
+                    {
+                        text: lang.pt['cookies-p-4'],
+                        translateId: 'cookies-p-4',
+                        classNames: 'txt-22',
+                    },
+                    {
+                        text: lang.pt['cookies-h-5'],
+                        translateId: 'cookies-h-5',
+                        classNames: 'txt-22 fw-700 tt-u',
+                    },
+                    {
+                        text: lang.pt['cookies-p-5'],
+                        translateId: 'cookies-p-5',
+                        classNames: 'txt-22',
+                    },
+                ],
+            }
+        }
+
+    //- MARK UP
+
+    main(id="cookies-page") 
+        section(class="section --one")
+            div(Class="content")
+                article(class="content-text")
+                    for text in pageData.section1.textContent
+                        p(class=text.classNames data-translate=text.translateId)!=text.text

@@ -10,6 +10,21 @@
 .tt-u {
     text-transform: uppercase;
 }
+.txt-li {
+    display: block;
+    position: relative;
+    &:before {
+        content: "";
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        position: relative;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 10px;
+        background: #fff;
+    }
+}
 .ff-geo {
     font-family: "Geomanist", "Helvetica", sans-serif;
 }

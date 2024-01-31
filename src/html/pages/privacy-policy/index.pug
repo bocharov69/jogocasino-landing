@@ -1,0 +1,267 @@
+extends ../../components/Layouts/MainLayout/index.pug
+
+block mainLayoutVariables
+    //- head meta data
+    -
+        const pageMetaData = {
+            keywords: '',
+            description: '',
+            title: 'Jogo Casinos',
+            faviconSrc: '@img/icons/favicon.ico'
+        }
+
+block mainLayoutContent
+    //- page content data
+    -
+        const pageData = {
+            section1: {
+                textContent: [
+                    {
+                        text: lang.pt['privacy-heading'],
+                        translateId: 'privacy-heading',
+                        classNames: 'txt-40 fw-500 ff-geo',
+                    },
+                    {
+                        text: lang.pt['privacy-p-1'],
+                        translateId: 'privacy-p-1',
+                        classNames: 'txt-22',
+                    },
+                    {
+                        text: lang.pt['privacy-li-1-1'],
+                        translateId: 'privacy-li-1-1',
+                        classNames: 'txt-22 txt-li',
+                    },
+                    {
+                        text: lang.pt['privacy-li-1-2'],
+                        translateId: 'privacy-li-1-2',
+                        classNames: 'txt-22 txt-li',
+                    },
+                    {
+                        text: lang.pt['privacy-li-1-3'],
+                        translateId: 'privacy-li-1-3',
+                        classNames: 'txt-22 txt-li',
+                    },{
+                        text: lang.pt['privacy-li-1-4'],
+                        translateId: 'privacy-li-1-4',
+                        classNames: 'txt-22 txt-li',
+                    },
+                    {
+                        text: lang.pt['privacy-li-1-5'],
+                        translateId: 'privacy-li-1-5',
+                        classNames: 'txt-22 txt-li',
+                    },
+                    {
+                        text: lang.pt['privacy-li-1-6'],
+                        translateId: 'privacy-li-1-6',
+                        classNames: 'txt-22 txt-li',
+                    },
+                    {
+                        text: lang.pt['privacy-li-1-7'],
+                        translateId: 'privacy-li-1-7',
+                        classNames: 'txt-22 txt-li',
+                    },
+                    {
+                        text: lang.pt['privacy-li-1-8'],
+                        translateId: 'privacy-li-1-8',
+                        classNames: 'txt-22 txt-li',
+                    },
+                    {
+                        text: lang.pt['privacy-h-2'],
+                        translateId: 'privacy-h-2',
+                        classNames: 'txt-22 fw-700 tt-u',
+                    },
+                    {
+                        text: lang.pt['privacy-p-2'],
+                        translateId: 'privacy-p-2',
+                        classNames: 'txt-22',
+                    },
+                    {
+                        text: lang.pt['privacy-h-3'],
+                        translateId: 'privacy-h-3',
+                        classNames: 'txt-22 fw-700 tt-u',
+                    },
+                    {
+                        text: lang.pt['privacy-p-3'],
+                        translateId: 'privacy-p-3',
+                        classNames: 'txt-22',
+                    },
+                    {
+                        text: lang.pt['privacy-li-3-1'],
+                        translateId: 'privacy-li-3-1',
+                        classNames: 'txt-22 txt-li',
+                    },
+                    {
+                        text: lang.pt['privacy-li-3-2'],
+                        translateId: 'privacy-li-3-2',
+                        classNames: 'txt-22 txt-li',
+                    },
+                    {
+                        text: lang.pt['privacy-li-3-3'],
+                        translateId: 'privacy-li-3-3',
+                        classNames: 'txt-22 txt-li',
+                    },{
+                        text: lang.pt['privacy-li-3-4'],
+                        translateId: 'privacy-li-3-4',
+                        classNames: 'txt-22 txt-li',
+                    },
+                    {
+                        text: lang.pt['privacy-li-3-5'],
+                        translateId: 'privacy-li-3-5',
+                        classNames: 'txt-22 txt-li',
+                    },
+                    {
+                        text: lang.pt['privacy-li-3-6'],
+                        translateId: 'privacy-li-3-6',
+                        classNames: 'txt-22 txt-li',
+                    },
+                    {
+                        text: lang.pt['privacy-li-3-7'],
+                        translateId: 'privacy-li-3-7',
+                        classNames: 'txt-22 txt-li',
+                    },
+                    {
+                        text: lang.pt['privacy-h-4'],
+                        translateId: 'privacy-h-4',
+                        classNames: 'txt-22 fw-700 tt-u',
+                    },
+                    {
+                        text: lang.pt['privacy-p-4'],
+                        translateId: 'privacy-p-4',
+                        classNames: 'txt-22',
+                    },
+                    {
+                        text: lang.pt['privacy-h-5'],
+                        translateId: 'privacy-h-5',
+                        classNames: 'txt-22 fw-700 tt-u',
+                    },
+                    {
+                        text: lang.pt['privacy-p-5'],
+                        translateId: 'privacy-p-5',
+                        classNames: 'txt-22',
+                    },
+                    {
+                        text: lang.pt['privacy-h-6'],
+                        translateId: 'privacy-h-6',
+                        classNames: 'txt-22 fw-700 tt-u',
+                    },
+                    {
+                        text: lang.pt['privacy-p-6'],
+                        translateId: 'privacy-p-6',
+                        classNames: 'txt-22',
+                    },
+                    {
+                        text: lang.pt['privacy-h-7'],
+                        translateId: 'privacy-h-7',
+                        classNames: 'txt-22 fw-700 tt-u',
+                    },
+                    {
+                        text: lang.pt['privacy-p-7'],
+                        translateId: 'privacy-p-7',
+                        classNames: 'txt-22',
+                    },
+                    {
+                        text: lang.pt['privacy-h-8'],
+                        translateId: 'privacy-h-8',
+                        classNames: 'txt-22 fw-700 tt-u',
+                    },
+                    {
+                        text: lang.pt['privacy-p-8'],
+                        translateId: 'privacy-p-8',
+                        classNames: 'txt-22',
+                    },
+                    {
+                        text: lang.pt['privacy-h-9'],
+                        translateId: 'privacy-h-9',
+                        classNames: 'txt-22 fw-700 tt-u',
+                    },
+                    {
+                        text: lang.pt['privacy-p-9'],
+                        translateId: 'privacy-p-9',
+                        classNames: 'txt-22',
+                    },
+                    {
+                        text: lang.pt['privacy-h-10'],
+                        translateId: 'privacy-h-10',
+                        classNames: 'txt-22 fw-700 tt-u',
+                    },
+                    {
+                        text: lang.pt['privacy-p-10'],
+                        translateId: 'privacy-p-10',
+                        classNames: 'txt-22',
+                    },
+                    {
+                        text: lang.pt['privacy-li-10-1'],
+                        translateId: 'privacy-li-10-1',
+                        classNames: 'txt-22 txt-li',
+                    },
+                    {
+                        text: lang.pt['privacy-li-10-2'],
+                        translateId: 'privacy-li-10-2',
+                        classNames: 'txt-22 txt-li',
+                    },
+                    {
+                        text: lang.pt['privacy-li-10-3'],
+                        translateId: 'privacy-li-10-3',
+                        classNames: 'txt-22 txt-li',
+                    },{
+                        text: lang.pt['privacy-li-10-4'],
+                        translateId: 'privacy-li-10-4',
+                        classNames: 'txt-22 txt-li',
+                    },
+                    {
+                        text: lang.pt['privacy-li-10-5'],
+                        translateId: 'privacy-li-10-5',
+                        classNames: 'txt-22 txt-li',
+                    },
+                    {
+                        text: lang.pt['privacy-li-10-6'],
+                        translateId: 'privacy-li-10-6',
+                        classNames: 'txt-22 txt-li',
+                    },
+                    {
+                        text: lang.pt['privacy-p-10-1'],
+                        translateId: 'privacy-p-10-1',
+                        classNames: 'txt-22',
+                    },
+                    {
+                        text: lang.pt['privacy-h-11'],
+                        translateId: 'privacy-h-11',
+                        classNames: 'txt-22 fw-700 tt-u',
+                    },
+                    {
+                        text: lang.pt['privacy-p-11'],
+                        translateId: 'privacy-p-11',
+                        classNames: 'txt-22',
+                    },
+                    {
+                        text: lang.pt['privacy-h-12'],
+                        translateId: 'privacy-h-12',
+                        classNames: 'txt-22 fw-700 tt-u',
+                    },
+                    {
+                        text: lang.pt['privacy-p-12'],
+                        translateId: 'privacy-p-12',
+                        classNames: 'txt-22',
+                    },
+                    {
+                        text: lang.pt['privacy-h-13'],
+                        translateId: 'privacy-h-13',
+                        classNames: 'txt-22 fw-700 tt-u',
+                    },
+                    {
+                        text: lang.pt['privacy-p-13'],
+                        translateId: 'privacy-p-13',
+                        classNames: 'txt-22',
+                    },
+                ],
+            }
+        }
+
+    //- MARK UP
+
+    main(id="privacy-page") 
+        section(class="section --one")
+            div(Class="content")
+                article(class="content-text")
+                    for text in pageData.section1.textContent
+                        p(class=text.classNames data-translate=text.translateId)!=text.text
